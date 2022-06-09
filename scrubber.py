@@ -19,11 +19,9 @@ with open(input_file, 'r') as f:
     
 doc = nlp(text_to_scrub)
 
-# Performs NER
-for ent in doc.ents:
-  print(ent.text,ent.label_)
-
+### Perform NER ###
 # replace the NER tagged as 'PERSON'
+# with person
 scrubbed_text = text_to_scrub
 for ent in reversed(doc.ents):
     if ent.label_ == 'PERSON':
@@ -31,5 +29,5 @@ for ent in reversed(doc.ents):
 
 with open(output_file, 'w') as f:
     f.write(scrubbed_text)
-    
+
 print(scrubbed_text)
