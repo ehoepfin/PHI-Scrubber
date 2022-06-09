@@ -25,7 +25,7 @@ doc = nlp(text_to_scrub)
 scrubbed_text = text_to_scrub
 for ent in reversed(doc.ents):
     if ent.label_ == 'PERSON':
-        scrubbed_text = scrubbed_text[:ent.start_char] +ent.label_ + scrubbed_text[ent.end_char:]
+        scrubbed_text = scrubbed_text[:ent.start_char] + ent.label_ + scrubbed_text[ent.end_char:]
 
 with open(output_file, 'w') as f:
     f.write(scrubbed_text)
