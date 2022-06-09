@@ -5,6 +5,7 @@ Created on Wed Jun  8 11:42:29 2022
 @author: LHoepfinger, MBrown, LPipatanangkura
 """
 import spacy
+from datetime import date
 
 # input and output files
 input_file = 'PHIScrubber.txt'
@@ -28,6 +29,7 @@ for ent in reversed(doc.ents):
         scrubbed_text = scrubbed_text[:ent.start_char] + ent.label_ + scrubbed_text[ent.end_char:]
 
 with open(output_file, 'w') as f:
+    f.write(f"This file scrubbed of PHI names data on {date.today().month}/{date.today().day}/{date.today().year}\n")
     f.write(scrubbed_text)
 
 print(scrubbed_text)
