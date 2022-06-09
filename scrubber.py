@@ -8,7 +8,7 @@ import spacy
 from datetime import date
 
 # input and output files
-input_file = 'PHIScrubber.txt'
+input_file = input("Which file do you want to scrub? ")
 output_file = 'scrubbed_' + input_file
 
 """ Load the Spacy model, use the testing corpus we created"""
