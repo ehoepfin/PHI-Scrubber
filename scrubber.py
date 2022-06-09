@@ -8,7 +8,7 @@ import spacy
 
 # input and output files
 input_file = 'PHIScrubber.txt'
-output_file = "Scrubbed_" + input_file
+output_file = 'scrubbed_' + input_file
 
 """ Load the Spacy model, use the testing corpus we created"""
 nlp = spacy.load("en_core_web_sm")
