@@ -25,5 +25,13 @@
         "pattern" : [
             [{"LIKE_URL" : true}]
         ]
+    },
+    "social_security_number" : {
+        "id" : "SSN",
+        "pattern": [
+            [{"SHAPE": "ddd"},
+            {"ORTH": "-", "OP": "?"}, {"SHAPE": "dd"},
+            {"ORTH": "-", "OP": "?"}, {"SHAPE": "dddd"}]
+        ]
     }
 }
