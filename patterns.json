@@ -5,10 +5,18 @@
             [{"LIKE_EMAIL": true}]
         ]
     },
-    "numbers": {
+    "phone_number" : {
         "id" : "PHONE",
+        "pattern": [
+            [{"SHAPE": "ddd"},
+            {"ORTH": "-", "OP": "?"}, {"SHAPE": "ddd"},
+            {"ORTH": "-", "OP": "?"}, {"SHAPE": "dddd"}]
+        ]
+    },
+    "url" : {
+        "id" : "URL",
         "pattern" : [
-            [{"LIKE_NUM": true}]
+            [{"LIKE_URL" : true}]
         ]
     }
 }
