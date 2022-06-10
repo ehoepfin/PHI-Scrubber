@@ -1,0 +1,8 @@
+{
+    "email" : [
+        [{"LIKE_EMAIL": true}]
+    ],
+    "numbers" : [
+        [{"LIKE_NUM": true}]
+    ]
+}

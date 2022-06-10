@@ -28,4 +28,10 @@ At the top, you can find that the program will document the date the file was sc
 ```
 This file scrubbed of PHI names data on <month>/<day>/<year>
 ```
-Within the text file, each name will be replaced with the token "PERSON"
+This program supports scrubbing:
+***
+```
+people - PERSON
+```
+
+Within the text file, each name will be replaced with the token specified token.
