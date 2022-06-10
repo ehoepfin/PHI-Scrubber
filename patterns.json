@@ -2,7 +2,10 @@
     "email" : [
         [{"LIKE_EMAIL": true}]
     ],
-    "numbers" : [
-        [{"LIKE_NUM": true}]
+    "phone_number" : [
+        [{"SHAPE": "ddd"},
+        {"ORTH": "-", "OP": "?"}, {"SHAPE": "ddd"},
+        {"ORTH": "-", "OP": "?"}, {"SHAPE": "dddd"}]
     ]
+
 }
