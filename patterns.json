@@ -6,6 +6,9 @@
         [{"SHAPE": "ddd"},
         {"ORTH": "-", "OP": "?"}, {"SHAPE": "ddd"},
         {"ORTH": "-", "OP": "?"}, {"SHAPE": "dddd"}]
+    ],
+    "url" : [
+        [{"LIKE_URL" : true}]
     ]
 
 }

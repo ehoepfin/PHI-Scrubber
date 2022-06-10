@@ -26,6 +26,7 @@ with open("patterns.json") as j:
 matcher = Matcher(nlp.vocab)
 matcher.add("EMAIL", patterns['email'])
 matcher.add("PHONE", patterns['phone_number'])
+matcher.add("URL", patterns['url'])
 
 # opens the .txt file and saves it as a string
 with open(input_file, 'r') as f:
