@@ -1,4 +1,11 @@
 {
+    "person" : {
+        "id" : "PERSON",
+        "pattern": [
+            [{"ENT_TYPE": "PERSON"},
+            {"POS":"PROPN"}]
+        ]
+    },
     "email": {
         "id" : "EMAIL",
         "pattern" : [
