@@ -24,8 +24,9 @@ with open("patterns.json") as j:
 
 # create custom tokens for the patterns
 matcher = Matcher(nlp.vocab)
-matcher.add("EMAIL", patterns['email'])
-matcher.add("PHONE", patterns['numbers'])
+for item in patterns:
+    matcher.add(patterns['email']['id'], patterns['email']['pattern'])
+# matcher.add("PHONE", patterns['numbers']['id'])
 
 # opens the .txt file and saves it as a string
 with open(input_file, 'r') as f:

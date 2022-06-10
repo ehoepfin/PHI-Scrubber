@@ -1,8 +1,14 @@
 {
-    "email" : [
-        [{"LIKE_EMAIL": true}]
-    ],
-    "numbers" : [
-        [{"LIKE_NUM": true}]
-    ]
+    "email": {
+        "id" : "EMAIL",
+        "pattern" : [
+            [{"LIKE_EMAIL": true}]
+        ]
+    },
+    "numbers": {
+        "id" : "PHONE",
+        "pattern" : [
+            [{"LIKE_NUM": true}]
+        ]
+    }
 }
