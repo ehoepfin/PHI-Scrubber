@@ -1,6 +1,6 @@
 # PHI-Scrubber
 ### Dependencies ##
-Anaconda3 - In the development of this project we discovered anaconda a useful tool in running spaCy
+Anaconda3 - In the development of this project, we discovered anaconda a useful tool in running spaCy
 ### Installation ###
 1. Install spaCy
 ```
