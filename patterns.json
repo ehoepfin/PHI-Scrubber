@@ -55,5 +55,11 @@
         "pattern": [
             [{"ENT_TYPE": "GPE"}]
         ]
+    },
+    "date" : {
+        "id" : "DATE",
+        "pattern": [
+            [{"ENT_TYPE": "DATE"}]
+        ]
     }
 }
