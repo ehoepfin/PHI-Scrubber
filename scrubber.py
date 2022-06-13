@@ -16,8 +16,6 @@ output_file = 'scrubbed_' + input_file
 
 # Load spaCy module
 nlp = spacy.load("en_core_web_sm")
-nlp.add_pipe("merge_entities", after="ner")
-
 
 # add custom paterns (patterns.json holds all the custom patterns)
 with open("patterns.json") as j:
