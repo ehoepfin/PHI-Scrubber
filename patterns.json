@@ -1,0 +1,37 @@
+{
+    "person" : {
+        "id" : "PERSON",
+        "pattern": [
+            [{"ENT_TYPE": "PERSON"},
+            {"POS":"PROPN"}]
+        ]
+    },
+    "email": {
+        "id" : "EMAIL",
+        "pattern" : [
+            [{"LIKE_EMAIL": true}]
+        ]
+    },
+    "phone_number" : {
+        "id" : "PHONE",
+        "pattern": [
+            [{"SHAPE": "ddd"},
+            {"ORTH": "-", "OP": "?"}, {"SHAPE": "ddd"},
+            {"ORTH": "-", "OP": "?"}, {"SHAPE": "dddd"}]
+        ]
+    },
+    "url" : {
+        "id" : "URL",
+        "pattern" : [
+            [{"LIKE_URL" : true}]
+        ]
+    },
+    "social_security_number" : {
+        "id" : "SSN",
+        "pattern": [
+            [{"SHAPE": "ddd"},
+            {"ORTH": "-", "OP": "?"}, {"SHAPE": "dd"},
+            {"ORTH": "-", "OP": "?"}, {"SHAPE": "dddd"}]
+        ]
+    }
+}
