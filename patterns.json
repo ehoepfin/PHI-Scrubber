@@ -33,5 +33,15 @@
             {"ORTH": "-", "OP": "?"}, {"SHAPE": "dd"},
             {"ORTH": "-", "OP": "?"}, {"SHAPE": "dddd"}]
         ]
+    },
+    "medical_record_number" : {
+        "id" : "MRN",
+        "pattern": [
+            [{"SHAPE": "dd"},
+            {"ORTH": "-", "OP": "?"},
+            {"SHAPE": "dd"},
+            {"ORTH": "-", "OP": "?"},
+            {"SHAPE": "dd"}]
+        ]
     }
 }
