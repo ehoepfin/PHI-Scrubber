@@ -16,7 +16,7 @@ input_file = "PHIScrubber.txt" #input("Which file do you want to scrub? ")
 output_file = 'scrubbed_' + input_file
 
 # Load spaCy module
-nlp = spacy.load("en_core_web_md")
+nlp = spacy.load("en_core_web_sm")
 nlp.add_pipe("merge_entities", after="ner")
 
 

@@ -48,9 +48,8 @@ SSN - SSN
 Emails - EMAIL
 Medical record #s Acct #s - MRN 
 Health Plan #s HP
-URLs - URL 
+Web Addresses(URLs and IP addresses) - WEB 
 Vehicle identifiers (serial numbers, license plates) - VI 
-IP Addresses - IP
 ```
 
 Within the text file, each name will be replaced with the token specified token.
