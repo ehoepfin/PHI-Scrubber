@@ -55,4 +55,4 @@ with open(output_file, 'w') as f:
     f.write(f"This file scrubbed of PHI data on {date.today().month}/{date.today().day}/{date.today().year}\n")
     f.write(scrubbed_text)
 
-# print(scrubbed_text)
+print(scrubbed_text)

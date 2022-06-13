@@ -31,5 +31,23 @@
         "pattern" : [
             [{"TEXT" : {"REGEX" : "[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)?"}}]
         ]
+    },
+    "social_security_number" : {
+        "id" : "SSN",
+        "pattern": [
+            [{"SHAPE": "ddd"},
+            {"ORTH": "-", "OP": "?"}, {"SHAPE": "dd"},
+            {"ORTH": "-", "OP": "?"}, {"SHAPE": "dddd"}]
+        ]
+    },
+    "medical_record_number" : {
+        "id" : "MRN",
+        "pattern": [
+            [{"SHAPE": "dd"},
+            {"ORTH": "-", "OP": "?"},
+            {"SHAPE": "dd"},
+            {"ORTH": "-", "OP": "?"},
+            {"SHAPE": "dd"}]
+        ]
     }
 }
