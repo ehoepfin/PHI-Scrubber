@@ -50,17 +50,17 @@
             [{"ENT_TYPE": "GPE"}]
         ]
     },
-<<<<<<< HEAD
     "number_series" : {
         "id" : "PHI",
         "pattern" : [
             [{"TEXT" : {"REGEX" : "^(?=.*[A-Za-z])(?=.*[0-9])[A-Za-z0-9-]{5,}$"}}]
-=======
+        ]
+    },
+
     "date" : {
         "id" : "DATE",
         "pattern": [
             [{"ENT_TYPE": "DATE"}]
->>>>>>> 317fbce694d0213c8204b599b1177f52598b159b
         ]
     }
 }
