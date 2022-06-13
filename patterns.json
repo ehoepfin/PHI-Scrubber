@@ -2,28 +2,34 @@
     "person" : {
         "id" : "PERSON",
         "pattern": [
-            [{"ENT_TYPE": "PERSON"},
-            {"POS":"PROPN"}]
+            [{"ENT_TYPE": "PERSON"}]
         ]
     },
     "email": {
         "id" : "EMAIL",
         "pattern" : [
-            [{"LIKE_EMAIL": true}]
+            [{"LIKE_EMAIL": true, "OP" : "*"}]
         ]
     },
     "phone_number" : {
         "id" : "PHONE",
         "pattern": [
-            [{"SHAPE": "ddd"},
-            {"ORTH": "-", "OP": "?"}, {"SHAPE": "ddd"},
-            {"ORTH": "-", "OP": "?"}, {"SHAPE": "dddd"}]
+            [
+                {"ORTH": "("}, {"SHAPE": "ddd"}, {"ORTH": ")"}, {"SHAPE": "ddd"},
+                {"ORTH": "-", "OP": "?"}, {"SHAPE": "dddd"}
+            ]
+        ]
+    },
+    "ip" : {
+        "id" : "IP",
+        "pattern" : [
+            [{"TEXT" : {"REGEX" : "\\d+(?:\\.\\d+){3}"}}]
         ]
     },
     "url" : {
         "id" : "URL",
         "pattern" : [
-            [{"LIKE_URL" : true}]
+            [{"TEXT" : {"REGEX" : "[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)?"}}]
         ]
     }
 }

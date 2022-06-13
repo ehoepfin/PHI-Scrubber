@@ -6,6 +6,7 @@ Created on Wed Jun  8 11:42:29 2022
 """
 import spacy
 from spacy.matcher import Matcher
+from spacy.matcher import PhraseMatcher
 from datetime import date
 from spacy.tokens import Span
 import json
@@ -16,6 +17,7 @@ output_file = 'scrubbed_' + input_file
 
 # Load spaCy module
 nlp = spacy.load("en_core_web_sm")
+nlp.add_pipe("merge_entities", after="ner")
 
 
 # add custom paterns (patterns.json holds all the custom patterns)
@@ -45,11 +47,12 @@ for match_id, start_char, end_char in matches:
 # 2. Return Span objects directly
 matches = matcher(doc, as_spans=True)
 for span in reversed(matches):
+    print(text_to_scrub[span.start_char:span.end_char], span.label_)
     # replace text with the matched token
     scrubbed_text = scrubbed_text[:span.start_char] + span.label_ + scrubbed_text[span.end_char:]
 
 with open(output_file, 'w') as f:
-    f.write(f"This file scrubbed of PHI names data on {date.today().month}/{date.today().day}/{date.today().year}\n")
+    f.write(f"This file scrubbed of PHI data on {date.today().month}/{date.today().day}/{date.today().year}\n")
     f.write(scrubbed_text)
 
-print(scrubbed_text)
+# print(scrubbed_text)
