@@ -15,7 +15,7 @@ $ python -m spacy download  en_core_web_md
 Consult spaCy's documentation for further details
 ### How to run: ###
 ```
-$ python3 scrubber.py
+$ python scrubber.py
 ```
 or 
 ```
@@ -40,6 +40,7 @@ This file scrubbed of PHI names data on <month>/<day>/<year>
 ```
 This program supports scrubbing:
 ```
+<entity> - <TOKEN>
 People Name - PERSON
 Dates (month and day) - DATE????
 Phone #s/Fax - PHONE
@@ -49,7 +50,7 @@ Emails - EMAIL
 Medical record #s Acct #s - MRN 
 Health Plan #s HP
 Web Addresses(URLs and IP addresses) - WEB 
-Vehicle identifiers (serial numbers, license plates) - VI 
+Vehicle identifiers (serial numbers, license plates) - VIN 
 ```
 
 Within the text file, each name will be replaced with the token specified token.
