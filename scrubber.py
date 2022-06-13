@@ -11,7 +11,7 @@ from spacy.tokens import Span
 import json
 
 # input and output files
-input_file = "PHIScrubber.txt" #input("Which file do you want to scrub? ")
+input_file = "dictatedPHI.txt" #input("Which file do you want to scrub? ")
 output_file = 'scrubbed_' + input_file
 
 # Load spaCy module
