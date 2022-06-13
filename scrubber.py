@@ -6,7 +6,6 @@ Created on Wed Jun  8 11:42:29 2022
 """
 import spacy
 from spacy.matcher import Matcher
-from spacy.matcher import PhraseMatcher
 from datetime import date
 from spacy.tokens import Span
 import json
