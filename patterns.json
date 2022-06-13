@@ -49,5 +49,11 @@
             {"ORTH": "-", "OP": "?"},
             {"SHAPE": "dd"}]
         ]
+    },
+    "location" : {
+        "id" : "LOCATION",
+        "pattern": [
+            [{"ENT_TYPE": "GPE"}]
+        ]
     }
 }
