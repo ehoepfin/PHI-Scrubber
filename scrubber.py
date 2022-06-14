@@ -44,7 +44,6 @@ for match_id, start_char, end_char in matches:
 # 2. Return Span objects directly
 matches = matcher(doc, as_spans=True)
 for span in reversed(matches):
-    print(text_to_scrub[span.start_char:span.end_char], span.label_)
     # replace text with the matched token
     scrubbed_text = scrubbed_text[:span.start_char] + span.label_ + scrubbed_text[span.end_char:]
 
