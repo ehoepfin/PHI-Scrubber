@@ -6,19 +6,16 @@ Created on Wed Jun  8 11:42:29 2022
 """
 import spacy
 from spacy.matcher import Matcher
-from spacy.matcher import PhraseMatcher
 from datetime import date
 from spacy.tokens import Span
 import json
 
 # input and output files
-input_file = "testingPHI.txt" #input("Which file do you want to scrub? ")
+input_file = "dictatedPHI.txt" #input("Which file do you want to scrub? ")
 output_file = 'scrubbed_' + input_file
 
 # Load spaCy module
 nlp = spacy.load("en_core_web_sm")
-nlp.add_pipe("merge_entities", after="ner")
-
 
 # add custom paterns (patterns.json holds all the custom patterns)
 with open("patterns.json") as j:

@@ -20,16 +20,10 @@
             ]
         ]
     },
-    "ip" : {
-        "id" : "IP",
-        "pattern" : [
-            [{"TEXT" : {"REGEX" : "\\d+(?:\\.\\d+){3}"}}]
-        ]
-    },
     "url" : {
-        "id" : "URL",
+        "id" : "WEB",
         "pattern" : [
-            [{"TEXT" : {"REGEX" : "[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)?"}}]
+            [{"LIKE_URL": true}]
         ]
     },
     "social_security_number" : {
@@ -56,10 +50,20 @@
             [{"ENT_TYPE": "GPE"}]
         ]
     },
+    "number_series" : {
+        "id" : "PHI",
+        "pattern" : [
+            [{"TEXT" : {"REGEX" : "^(?=.*[A-Za-z])(?=.*[0-9])[A-Za-z0-9-]{5,}$"}}]
+        ]
+    },
+
     "date" : {
         "id" : "DATE",
         "pattern": [
-            [{"ENT_TYPE": "DATE"}]
+            [{"TEXT" : {"REGEX": "^(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)$"}},
+            {"TEXT":{"REGEX":"^\\d{1,2}"}},
+            {"IS_PUNCT":true,"OP":"?"},
+            {"TEXT":{"REGEX":"^\\d{4}"}}]
         ]
     }
 }
