@@ -45,7 +45,7 @@
         ]
     },
     "location" : {
-        "id" : "LOCATION",
+        "id" : "LOC",
         "pattern": [
             [{"ENT_TYPE": "GPE"}]
         ]
