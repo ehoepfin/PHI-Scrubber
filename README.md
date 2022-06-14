@@ -58,7 +58,7 @@ This file scrubbed of PHI names data on <month>/<day>/<year>
 ```
 This program supports scrubbing:
 Entity | TOKEN 
-:---------|---------
+:---------|:---------
 People Name | PERSON
 Emails | EMAIL
 Phone #s/Fax | PHONE
