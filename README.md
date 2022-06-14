@@ -57,18 +57,18 @@ At the top, you can find that the program will document the date the file was sc
 This file scrubbed of PHI names data on <month>/<day>/<year>
 ```
 This program supports scrubbing:
-```
-<entity> - <TOKEN>
-People Name - PERSON
-Emails - EMAIL
-Phone #s/Fax - PHONE
-Web Addresses(URLs and IP addresses) - WEB 
-SSN - SSN
-Medical record #s Acct #s - MRN 
-Geographic Data (Locations) - LOC
-Number Series (Vehicle Identifiers, health plan numbers, etc) - PHI
-Dates - DATE
-```
+Entity | TOKEN 
+:---------|:---------
+People Name | PERSON
+Emails | EMAIL
+Phone #s/Fax | PHONE
+Web Addresses(URLs and IP addresses) | WEB 
+Social Securty Number | SSN
+Medical record Numbers & Account Numbers | MRN 
+Geographic Data (Locations) | LOC
+Number Series (Vehicle Identifiers, health plan numbers, etc) | PHI
+Dates | DATE
+
 In the new text file created, each item that is scrubbed will be replaced with the token specified token.
 
 ***
