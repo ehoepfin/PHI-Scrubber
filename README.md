@@ -38,7 +38,7 @@ scubbed_<original-file-name>.txt
 ### Output ###
 At the top, you can find that the program will document the date the file was scrubbed for names. With this heading:
 ```
-This file scrubbed of PHI names data on <month>/<day>/<year>
+This file scrubbed of PHI data on <month>/<day>/<year>
 ```
 This program supports scrubbing:
 ```
