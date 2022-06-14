@@ -57,8 +57,8 @@ At the top, you can find that the program will document the date the file was sc
 This file scrubbed of PHI names data on <month>/<day>/<year>
 ```
 This program supports scrubbing:
-entity | TOKEN 
----------|---------
+Entity | TOKEN 
+:---------|---------
 People Name | PERSON
 Emails | EMAIL
 Phone #s/Fax | PHONE
