@@ -35,13 +35,9 @@
         ]
     },
     "medical_record_number" : {
-        "id" : "MRN",
+        "id" : "PHI",
         "pattern": [
-            [{"SHAPE": "dd"},
-            {"ORTH": "-", "OP": "?"},
-            {"SHAPE": "dd"},
-            {"ORTH": "-", "OP": "?"},
-            {"SHAPE": "dd"}]
+            [{"TEXT" : {"REGEX" : "^(?=.*[0-9])[0-9]{5,}$"}}]
         ]
     },
     "location" : {
