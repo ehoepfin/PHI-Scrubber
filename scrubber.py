@@ -16,7 +16,10 @@ male_names = names.words('male.txt')
 female_names = names.words('female.txt')
 
 def choose_name(name):
-    return random.choice(male_names) if name in male_names else random.choice(female_names)
+    if name in male_names:
+        return random.choice(male_names)  
+    else:
+        return random.choice(female_names)
 
 # input and output files
 input_file = "dictatedPHI.txt" #input("Which file do you want to scrub? ")
@@ -53,9 +56,10 @@ for match_id, start_char, end_char in matches:
 matches = matcher(doc, as_spans=True)
 for span in reversed(matches):
     if (span.label_ == 'PERSON'):
-        scrubbed_text = scrubbed_text[:span.start_char] + choose_name(doc[span.start_char:span.end_char]) + scrubbed_text[span.end_char:]
+        scrubbed_text = scrubbed_text[:span.start_char] + choose_name(text_to_scrub[span.start_char:span.end_char]) + scrubbed_text[span.end_char:]
     # replace text with the matched token
-    scrubbed_text = scrubbed_text[:span.start_char] + span.label_ + scrubbed_text[span.end_char:]
+    else:
+        scrubbed_text = scrubbed_text[:span.start_char] + span.label_ + scrubbed_text[span.end_char:]
 
 with open(output_file, 'w') as f:
     f.write(f"This file scrubbed of PHI data on {date.today().month}/{date.today().day}/{date.today().year}\n")
