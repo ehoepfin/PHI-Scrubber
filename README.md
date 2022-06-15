@@ -37,7 +37,7 @@ Follow the steps to install NLTK according to your operating system here: [https
 
 Then install the NLTK corpus:
 ```
->python -m nltk.downloader all
+$ python -m nltk.downloader all
 ```
 
 ## How to run: ##
