@@ -4,7 +4,6 @@ Created on Wed Jun  8 11:42:29 2022
 
 @author: LHoepfinger, MBrown, LPipatanangkura
 """
-from xml.sax.handler import feature_namespace_prefixes
 import spacy
 from nltk.corpus import names
 from spacy.matcher import Matcher
