@@ -34,7 +34,10 @@ Consult spaCy's documentation for further details at [spacy.io](https://spacy.io
 
 Follow the steps to install NLTK according to your operating system here: [https://www.nltk.org/install.html](https://www.nltk.org/install.html)
 
-Then install the 
+Then install the NLTK corpus:
+```
+>python -m nltk.downloader all
+```
 
 ## How to run: ##
 ```
