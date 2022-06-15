@@ -5,10 +5,18 @@ Created on Wed Jun  8 11:42:29 2022
 @author: LHoepfinger, MBrown, LPipatanangkura
 """
 import spacy
+from nltk.corpus import names
 from spacy.matcher import Matcher
 from datetime import date
 from spacy.tokens import Span
+import random
 import json
+
+male_names = names.words('male.txt')
+female_names = names.words('female.txt')
+
+def choose_name(name):
+    return random.choice(male_names) if name in male_names else random.choice(female_names)
 
 # input and output files
 input_file = "dictatedPHI.txt" #input("Which file do you want to scrub? ")
@@ -44,7 +52,8 @@ for match_id, start_char, end_char in matches:
 # 2. Return Span objects directly
 matches = matcher(doc, as_spans=True)
 for span in reversed(matches):
-    print(text_to_scrub[span.start_char:span.end_char], span.label_)
+    if (span.label_ == 'PERSON'):
+        scrubbed_text = scrubbed_text[:span.start_char] + choose_name(doc[span.start_char:span.end_char]) + scrubbed_text[span.end_char:]
     # replace text with the matched token
     scrubbed_text = scrubbed_text[:span.start_char] + span.label_ + scrubbed_text[span.end_char:]
 

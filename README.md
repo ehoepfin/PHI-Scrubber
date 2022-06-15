@@ -8,12 +8,14 @@
 6. [Customization](#customization)
 
 ## Overview ##
-This scrubber uses spaCy's rule-based-matcher model. The model allows the creation of new tokens and customization of existing tokens. New patterns can be in the form of regular expressions, setting token attributes, etc. 
-<br /> <br />
+This scrubber uses spaCy's rule-based-matcher model. The model allows the creation of new tokens and customization of existing tokens. New patterns can be in the form of regular expressions, setting token attributes, etc. In addition to spCy, NLTK is used for name recognition.
+
+
 Skip to [Customization](#customization) to create modify or create tokens for this scrubber.
 
 ## Dependencies ##
-Anaconda3 - In the development of this project, we discovered anaconda a useful tool in running spaCy.
+1. Anaconda3 - In the development of this project, we discovered anaconda a useful tool in running spaCy and NLTK.
+2. spaCy - 
 
 ## Installation ##
 1. Install spaCy
@@ -22,11 +24,17 @@ $ pip install -U pip setuptools wheel
 $ pip install -U spacy
 $ python -m spacy download en_core_web_sm
 ```
-2. Download the correct model spacy provides
+Download the correct model spacy provides
 ```
-$ python -m spacy download  en_core_web_md
+$ python -m spacy download  en_core_web_sm
 ```
 Consult spaCy's documentation for further details at [spacy.io](https://spacy.io)
+
+2. Install NLTK
+
+Follow the steps to install NLTK according to your operating system here: [https://www.nltk.org/install.html](https://www.nltk.org/install.html)
+
+Then install the 
 
 ## How to run: ##
 ```
