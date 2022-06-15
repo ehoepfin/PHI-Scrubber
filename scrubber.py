@@ -15,7 +15,7 @@ import json
 male_names = names.words('male.txt')
 female_names = names.words('female.txt')
 
-def choose_names(name):
+def choose_name(name):
     return random.choice(male_names) if name in male_names else random.choice(female_names)
 
 # input and output files
