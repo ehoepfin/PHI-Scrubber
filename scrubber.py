@@ -13,8 +13,8 @@ import random
 import json
 
 # input and output files
-input_file = "testingPHI.txt" #input("Which file do you want to scrub? ")
-output_file = 'scrubbed_' + input_file
+input_file = "TestCorpusFile.txt" #input("Which file do you want to scrub? ")
+output_file = 'output\scrubbed_' + input_file
 
 # Load spaCy module
 nlp = spacy.load("en_core_web_sm")

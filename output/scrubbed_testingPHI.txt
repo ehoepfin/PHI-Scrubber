@@ -1,5 +1,5 @@
 This file scrubbed of PHI data on 6/15/2022
-PATIENT: Wilma Brier
+PATIENT: Alexa Antonina
 AGE: 17
 DOB: DATE
 PHONE: PHONE
@@ -10,12 +10,12 @@ LICENSE PLATE: PHI
 
 CHIEF COMPLAINT: "I took ecstasy."
 
-HISTORY OF PRESENT ILLNESS: Wilma Brier is a 17-year-old female who went out partying last night and drank two mixed drinks last night 
+HISTORY OF PRESENT ILLNESS: Alexa Antonina is a 17-year-old female who went out partying last night and drank two mixed drinks last night 
 and then over the course of the evening after midnight, the patient ended up taking a total of six Ecstasy tablets. 
 The patient upon returning to home was energetic and agitated and shaking and had one episode of nonbloody, nonbilious emesis. 
-Mother, Henry Brier called the EMS service when the patient vomited. On arrival here, Wilma states that she no longer has any nausea and that she feels just fine. 
+Mother, Shandy Antonina called the EMS service when the patient vomited. On arrival here, Alexa states that she no longer has any nausea and that she feels just fine. 
 The patient states she feels wired but has no other problems or complaints. The patient denies any pain. The patient does not have any auditory of visual hallucinations. 
-The patient denies any depression or suicidal ideation. The patient states that the alcohol and the Janus was done purely as a recreational thing and not as an attempt to harm herself. 
+The patient denies any depression or suicidal ideation. The patient states that the alcohol and the Cristie was done purely as a recreational thing and not as an attempt to harm herself. 
 The patient denies any homicidal ideation. The patient denies any recent illness or recent injuries. The mother states that the daughter appears to be back to her usual self now.
 
 REVIEW OF SYSTEMS: CONSTITUTIONAL: No recent illness. No fever or chills. 
@@ -39,7 +39,7 @@ SOCIAL HISTORY: The patient denies smoking cigarettes. The patient does drink al
 
 PHYSICAL EXAMINATION: VITAL SIGNS: Temperature is 98.8 oral, blood pressure 140/86, pulse is 79, respirations 16, oxygen saturation 100% on room air and is interpreted as normal. 
 CONSTITUTIONAL: The patient is well nourished, and well developed, appears to be healthy. The patient is calm and comfortable, in no acute distress and looks well. The patient is pleasant and cooperative. 
-HEENT: Head is atraumatic, normocephalic, and nontender. Eyes are normal with clear cornea and conjunctiva bilaterally. The patient does have dilated pupils of approximately 8 mm each and are equally round and reactive to light bilaterally. No evidence of light sensitivity or photophobia. Extraocular motions are intact bilaterally. Nose is normal without rhinorrhea or audible congestion. Ears are normal without any sign of infection. Humbert and oropharynx are normal without any signs of infection. Mucous membranes are moist. 
+HEENT: Head is atraumatic, normocephalic, and nontender. Eyes are normal with clear cornea and conjunctiva bilaterally. The patient does have dilated pupils of approximately 8 mm each and are equally round and reactive to light bilaterally. No evidence of light sensitivity or photophobia. Extraocular motions are intact bilaterally. Nose is normal without rhinorrhea or audible congestion. Ears are normal without any sign of infection. Aggie and oropharynx are normal without any signs of infection. Mucous membranes are moist. 
 NECK: Supple and nontender. Full range of motion. There is no LOC. 
 CARDIOVASCULAR: Heart is regular rate and rhythm without murmur, rub or gallop. Peripheral pulses are +3 and bounding. 
 RESPIRATIONS: Clear to auscultation bilaterally. No shortness of breath. No wheezes, rales or rhonchi. Good air movement bilaterally. 
@@ -57,5 +57,5 @@ DIAGNOSES:
 
 CONDITION UPON DISPOSITION: Stable disposition to home with her mother.
 
-PLAN: I will have the patient followup with her physician at the ABC Clinic in two days for reevaluation. The patient was advised to stop drinking alcohol, and taking Janus as this is not only in the interest of her health, but was also illegal. 
+PLAN: I will have the patient followup with her physician at the ABC Clinic in two days for reevaluation. The patient was advised to stop drinking alcohol, and taking Cristie as this is not only in the interest of her health, but was also illegal. 
 The patient is asked to return to the emergency room should she have any worsening of her condition, develop any other problems or symptoms of concern.
