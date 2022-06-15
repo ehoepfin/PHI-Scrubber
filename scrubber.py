@@ -4,7 +4,6 @@ Created on Wed Jun  8 11:42:29 2022
 
 @author: LHoepfinger, MBrown, LPipatanangkura
 """
-from xml.sax.handler import feature_namespace_prefixes
 import spacy
 from nltk.corpus import names
 from spacy.matcher import Matcher
@@ -26,8 +25,8 @@ def choose_name(name):
 =======
 >>>>>>> main
 # input and output files
-input_file = "dictatedPHI.txt" #input("Which file do you want to scrub? ")
-output_file = 'scrubbed_' + input_file
+input_file = "TestCorpusFile.txt" #input("Which file do you want to scrub? ")
+output_file = 'output\scrubbed_' + input_file
 
 # Load spaCy module
 nlp = spacy.load("en_core_web_sm")
