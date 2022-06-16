@@ -89,7 +89,7 @@ for span in reversed(matches):
     if (span.label_ == 'PERSON'):
         #check if a medical entity is being tagged as a person
         if check_drugs(span.text):
-            break
+            continue
         else:
             scrubbed_text = scrubbed_text[:span.start_char] + choose_name(span, doc) + scrubbed_text[span.end_char:]
     else:
