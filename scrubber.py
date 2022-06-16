@@ -52,7 +52,7 @@ def choose_name(person, doc):
         return both_names[hash(person.text) % len(both_names)]
 
 #check the file for the specified drug names that may be tagged as people names, and if so, tag them appropriately
-def check_drugs(text, doc):
+def check_drugs(text):
     if text in drug_dict:
         return True
     if text in med_dict:
@@ -88,7 +88,7 @@ matches = matcher(doc, as_spans=True)
 for span in reversed(matches):
     if (span.label_ == 'PERSON'):
         #check if a medical entity is being tagged as a person
-        if check_drugs(span.text, doc):
+        if check_drugs(span.text):
             break
         else:
             scrubbed_text = scrubbed_text[:span.start_char] + choose_name(span, doc) + scrubbed_text[span.end_char:]
