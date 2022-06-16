@@ -51,7 +51,8 @@ def choose_name(person, doc):
     else:
         return both_names[hash(person.text) % len(both_names)]
 
-#check the file for the specified drug names that may be tagged as people names, and if so, tag them appropriately
+#check the file for the specified drug names that may be tagged as people names, 
+# and if so, tag them appropriately
 def check_drugs(text):
     if text in drug_dict:
         return True
