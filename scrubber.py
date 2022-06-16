@@ -13,7 +13,7 @@ import random
 import json
 
 # input and output files
-input_file = "TestCorpusFile.txt" #input("Which file do you want to scrub? ")
+input_file = "dictatedPHI.txt" #input("Which file do you want to scrub? ")
 output_file = 'output\scrubbed_' + input_file
 
 # Load spaCy module
@@ -25,6 +25,12 @@ male_names_shuffled = random.sample(male_names, len(male_names))
 female_names = names.words('female.txt')
 female_names_shuffled = random.sample(female_names, len(female_names))
 both_names = random.sample(male_names_shuffled + female_names_shuffled, len(male_names) + len(female_names))
+
+#load the drugs/medical terms from the Dictionaries/ 
+f = open("Dictionaries/DrugsDictionary.txt")
+r = open("Dictionaries/MedicalTermsDictionary.txt")
+drug_dict = f.read()
+med_dict = r.read()
 
 '''
 This function chooses a random name for a given person. 
@@ -44,6 +50,15 @@ def choose_name(person, doc):
         return female_names_shuffled[hash(person.text) % len(female_names)]
     else:
         return both_names[hash(person.text) % len(both_names)]
+
+#check the file for the specified drug names that may be tagged as people names, and if so, tag them appropriately
+def check_drugs(text):
+    if text in drug_dict:
+        return True
+    if text in med_dict:
+        return True
+    else:
+        return False
 
 # add custom paterns (patterns.json holds all the custom patterns)
 with open("patterns.json") as j:
@@ -72,7 +87,11 @@ for match_id, start_char, end_char in matches:
 matches = matcher(doc, as_spans=True)
 for span in reversed(matches):
     if (span.label_ == 'PERSON'):
-        scrubbed_text = scrubbed_text[:span.start_char] + choose_name(span, doc) + scrubbed_text[span.end_char:]
+        #check if a medical entity is being tagged as a person
+        if check_drugs(span.text):
+            break
+        else:
+            scrubbed_text = scrubbed_text[:span.start_char] + choose_name(span, doc) + scrubbed_text[span.end_char:]
     else:
         # replace text with the matched token
         scrubbed_text = scrubbed_text[:span.start_char] + span.label_ + scrubbed_text[span.end_char:]

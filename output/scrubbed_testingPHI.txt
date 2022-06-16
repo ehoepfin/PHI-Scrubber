@@ -1,6 +1,12 @@
+<<<<<<< HEAD:scrubbed_testingPHI.txt
+This file scrubbed of PHI data on 6/14/2022
+PATIENT: PERSON PERSON
+AGE: 6
+=======
 This file scrubbed of PHI data on 6/15/2022
 PATIENT: Alexa Antonina
 AGE: 17
+>>>>>>> main:output/scrubbed_testingPHI.txt
 DOB: DATE
 PHONE: PHONE
 MRN: PHI
@@ -8,8 +14,16 @@ SSN: SSN
 VIN: PHI
 LICENSE PLATE: PHI
 
-CHIEF COMPLAINT: "I took ecstasy."
+CHIEF COMPLAINT: Altered mental status.
 
+<<<<<<< HEAD:scrubbed_testingPHI.txt
+HISTORY OF PRESENT ILLNESS: PERSON is a 6-year-old white male, who was sent from the Emergency Room with the diagnosis of intracranial bleeding. He was found by the 8-year-old sister in the bathroom. 
+He was laying down on one side, and he was crying and moaning. The sibling went and told the parents. The parents rushed to the bathroom, they found him crying, and he was not moving the left side of his body. 
+He was initially alert, but his alertness diminished. They decided to take him to the emergency room in Hospital, where a CT was done on his head, which showed a 4 x 4 x 2.5 cm bleed. 
+The emergency physician called our emergency room, and I decided to involve PERSON, Dr. PERSON, the physician assistant, who is on call for the Neurosurgery Services. 
+Collectively, they have made arrangements with the ICU attendings to have the child transported to our emergency room. For a small stop, I am obtaining an MRI and then admitting to the ICU. History was taken from the parents. 
+He had a history of gastroesophageal reflux disease, otherwise, a healthy child.
+=======
 HISTORY OF PRESENT ILLNESS: Alexa Antonina is a 17-year-old female who went out partying last night and drank two mixed drinks last night 
 and then over the course of the evening after midnight, the patient ended up taking a total of six Ecstasy tablets. 
 The patient upon returning to home was energetic and agitated and shaking and had one episode of nonbloody, nonbilious emesis. 
@@ -17,26 +31,22 @@ Mother, Shandy Antonina called the EMS service when the patient vomited. On arri
 The patient states she feels wired but has no other problems or complaints. The patient denies any pain. The patient does not have any auditory of visual hallucinations. 
 The patient denies any depression or suicidal ideation. The patient states that the alcohol and the Cristie was done purely as a recreational thing and not as an attempt to harm herself. 
 The patient denies any homicidal ideation. The patient denies any recent illness or recent injuries. The mother states that the daughter appears to be back to her usual self now.
+>>>>>>> main:output/scrubbed_testingPHI.txt
 
-REVIEW OF SYSTEMS: CONSTITUTIONAL: No recent illness. No fever or chills. 
-HEENT: No headache. No neck pain. No vision change or hearing change. No eye or ear pain. No rhinorrhea. No sore throat. 
-CARDIOVASCULAR: No chest pain. No palpitations or racing heart. 
-RESPIRATIONS: No shortness of breath. No cough. 
-GASTROINTESTINAL: One episode of nonbloody, nonbilious emesis this morning without any nausea since then. The patient denies any abdominal pain. No change in bowel movements. 
-GENITOURINARY: No dysuria. 
-MUSCULOSKELETAL: No back pain. No muscle or joint aches. SKIN: No rashes or lesions. 
-NEUROLOGIC: No dizziness, syncope, or near syncope. 
-PSYCHIATRIC: The patient denies any depression, suicidal ideation, homicidal ideation, auditory hallucinations or visual hallucinations. 
-ENDOCRINE: No heat or cold intolerance.
+MEDICATIONS: None.
 
-PAST MEDICAL HISTORY: None.
-PAST SURGICAL HISTORY: Appendectomy when she was 9 years old.
-CURRENT MEDICATIONS: Birth control pills.
+ALLERGIES: No known drug allergies.
 
-ALLERGIES: NO KNOWN DRUG ALLERGIES.
+PAST SURGICAL HISTORY: He had only tympanostomy tubes placed.
 
-SOCIAL HISTORY: The patient denies smoking cigarettes. The patient does drink alcohol and also uses illicit drugs.
+FAMILY MEDICAL HISTORY: Unremarkable.
 
+<<<<<<< HEAD:scrubbed_testingPHI.txt
+PHYSICAL EXAMINATION:
+GENERAL: He was brought by our transport team. While en route, he was not as alert as he was. He was still oriented. 
+He had to be stimulated via sternal rub to wake up, and saturation went down to the 80s, and he was started on nasal cannula, and code 3 was initiated, and he was rushed to our emergency room. 
+When I saw him, he was lethargic, but arousable. He could recognize where he was, and he could recognize also his parents well.
+=======
 PHYSICAL EXAMINATION: VITAL SIGNS: Temperature is 98.8 oral, blood pressure 140/86, pulse is 79, respirations 16, oxygen saturation 100% on room air and is interpreted as normal. 
 CONSTITUTIONAL: The patient is well nourished, and well developed, appears to be healthy. The patient is calm and comfortable, in no acute distress and looks well. The patient is pleasant and cooperative. 
 HEENT: Head is atraumatic, normocephalic, and nontender. Eyes are normal with clear cornea and conjunctiva bilaterally. The patient does have dilated pupils of approximately 8 mm each and are equally round and reactive to light bilaterally. No evidence of light sensitivity or photophobia. Extraocular motions are intact bilaterally. Nose is normal without rhinorrhea or audible congestion. Ears are normal without any sign of infection. Aggie and oropharynx are normal without any signs of infection. Mucous membranes are moist. 
@@ -49,13 +59,27 @@ SKIN: No rashes or lesions.
 NEUROLOGIC: Cranial nerves II through XII are intact. Motor and sensory are intact in all extremities. The patient has normal speech and normal ambulation. 
 PSYCHIATRIC: The patient is alert and oriented x4. The patient does not have any smell of alcohol and does not exhibit any clinical intoxication. The patient is quite pleasant, fully cooperative. 
 HEMATOLOGIC/LYMPHATIC: NO lymphadenitis is noted. No bruising is noted.
+>>>>>>> main:output/scrubbed_testingPHI.txt
 
-DIAGNOSES:
-1. ECSTASY INGESTION.
-2. ALCOHOL INGESTION.
-3. VOMITING SECONDARY TO STIMULANT ABUSE.
+HEENT: Pupils are 4 mm reactive to direct and indirect light. No signs of trauma is seen on the head. PERSON is clear.
 
-CONDITION UPON DISPOSITION: Stable disposition to home with her mother.
+LUNGS: Clear to auscultation.
+HEART: Regular rate and rhythm.
+ABDOMEN: Soft.
+NEUROLOGIC: He has left-sided weakness, but his cranial nerves II through XII are grossly intact.
 
+<<<<<<< HEAD:scrubbed_testingPHI.txt
+EMERGENCY DEPARTMENT COURSE: In the emergency room, at the time when I saw him, Dr. PERSON and Dr. PERSON were from the ICU and Anesthesia Services arrived also, and they evaluated PERSON with me and pretty much they took care of the patient. 
+They decided to give him a dose of IV mannitol. I ordered his labs, type and cross. CBC is 15.6 white blood cell count, hemoglobin 12.8. PT/PTT were ordered due to the bleed, which was seen intracerebrally. They were 13.1 and 24.5 respectively. 
+Blood gas, I-STAT pH 7.36, pCO2 is 51. This was a venous specimen. The ICU attendings decided to do a rapid sequence intubation. This was done in our emergency room by Dr. PERSON and Dr. PERSON. 
+The patient was sent to the MRI, and from where he was going to be admitted to the ICU in critical condition.
+
+DIFFERENTIAL DIAGNOSES: Arteriovenous malformation, stroke, traumatic injury.
+
+IMPRESSION: Intracerebral hemorrhage of uncertain etiology to be determined while inpatient.
+
+TIME SPENT: I spent 30 minutes critical care time with the patient excluding any procedures.
+=======
 PLAN: I will have the patient followup with her physician at the ABC Clinic in two days for reevaluation. The patient was advised to stop drinking alcohol, and taking Cristie as this is not only in the interest of her health, but was also illegal. 
 The patient is asked to return to the emergency room should she have any worsening of her condition, develop any other problems or symptoms of concern.
+>>>>>>> main:output/scrubbed_testingPHI.txt
