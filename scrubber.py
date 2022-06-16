@@ -13,7 +13,7 @@ import random
 import json
 
 # input and output files
-input_file = "dictatedPHI.txt" #input("Which file do you want to scrub? ")
+input_file = input("Which file do you want to scrub? ")
 output_file = 'output\scrubbed_' + input_file
 
 # Load spaCy module
@@ -92,6 +92,7 @@ for span in reversed(matches):
         if check_drugs(span.text):
             continue
         else:
+            print(str(doc[span.start_char:span.end_char]))
             scrubbed_text = scrubbed_text[:span.start_char] + choose_name(span, doc) + scrubbed_text[span.end_char:]
     else:
         # replace text with the matched token
