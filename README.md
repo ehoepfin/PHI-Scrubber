@@ -15,7 +15,8 @@ Skip to [Customization](#customization) to create modify or create tokens for th
 
 ## Dependencies ##
 1. Anaconda3 - In the development of this project, we discovered anaconda a useful tool in running spaCy and NLTK.
-2. spaCy - 
+2. spaCy - The rule-rule based recognition is used to identify entities.
+3. NLTK - The corpus for names is used for random name generation. 
 
 ## Installation ##
 1. Install spaCy
